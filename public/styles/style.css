@@ -1,0 +1,68 @@
+.main {
+    text-align:center;
+    font-family: helvetica;
+    font-size: 12pt;
+    height: 60px;
+}
+
+.checkerBoard {
+  margin: 100px auto;
+  margin-top: 100px;
+  background-color: #E3CF57;
+  -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+}
+
+.cell, .piece {
+  width: 30px;
+  height: 30px;
+}
+
+.black {
+    background: #B8860B;
+}
+
+.activeCell {
+    background: #E0E0E0;
+    opacity: .7;
+}
+
+.activeCell.hovered {
+    background: #8F8F8F;
+}
+
+.piece {
+    border-radius: 15px;
+}
+
+.piece.black {
+    background: #282828;
+}
+
+.piece.red {
+    background: #CD3700;
+}
+
+.piece .kingCenter {
+    display:none;
+    padding:4px;
+}
+
+.piece.black .kingCenter {
+    color: yellow;
+     -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+}
+
+.piece.red .kingCenter {
+    color: yellow;
+     -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+}
+
+.piece.king .kingCenter {
+    display:inline-block;
+}
